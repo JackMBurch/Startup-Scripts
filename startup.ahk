@@ -26,6 +26,11 @@ foundpos := InStr(clipboard, "/")
 sr := SubStr(clipboard, foundpos + 1)
 clipboard := sr
 Return
+#F::
+Send, :bussinfr:
+sleep, 100
+Send, {Enter}
+Return
 #C::
 IfWinNotExist, Calculator
 {
