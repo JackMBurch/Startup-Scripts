@@ -1,5 +1,6 @@
 #SingleInstance Force
 Old = True
+CurrentJob := ""
 XButton1::
 Send {Enter}
 Return
@@ -11,9 +12,15 @@ Send {Enter}
 Send {Tab}
 Send {Enter}
 Return
+^+a::
+InputBox, CurrentJob, Job, Please enter the current job number,,230,125,
+Return
 ^+s::
-clipboard = Rnd1.0mm-B
-Send, ^v
+Send, %CurrentJob%
+Return
+^#N::
+clipboard := " [None]"
+Sendinput, ^{v}
 Return
 ^+d::
 StringReplace, clipboard, clipboard, (,, All
