@@ -4,19 +4,51 @@ CurrentJob := ""
 XButton1::
 Send {Enter}
 Return
-XButton2::
-Send {Down}
-Send {Down}
-Send {Down}
-Send {Enter}
-Send {Tab}
-Send {Enter}
-Return
 ^+a::
 InputBox, CurrentJob, Job, Please enter the current job number,,230,125,
 Return
 ^+s::
 Send, %CurrentJob%
+Return
+^+d::
+sleep, 100
+Send, ^a
+sleep, 10
+Send, ^c
+sleep, 10
+clipboard := clipboard * 0.25
+sleep, 10
+Send, `t
+sleep, 10
+Send, `t
+sleep, 10
+Send, `t
+sleep, 10
+Send, ^v
+sleep, 10
+Send, ^+`t
+sleep, 10
+Send, ^+`t
+sleep, 10
+Send, ^a
+sleep, 10
+Send, ^c
+sleep, 10
+clipwait, 1,1
+sleep, 10
+clipboard := clipboard * 0.25
+sleep, 10
+Send, `t
+sleep, 10
+Send, `t
+sleep, 10
+Send, `t
+sleep, 10
+Send, ^v
+sleep, 10
+Send, {Enter}
+sleep, 10
+Send, {Esc}
 Return
 ^#I::
 gui, 1: new
@@ -35,10 +67,6 @@ Return
 ^#N::
 clipboard := " [None]"
 Sendinput, ^{v}
-Return
-^+d::
-StringReplace, clipboard, clipboard, (,, All
-StringReplace, clipboard, clipboard, ),, All
 Return
 ^+c::
 Sendinput, ^{c}
