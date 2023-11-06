@@ -11,9 +11,12 @@ Return
 Send, %CurrentJob%
 Return
 ^+d::
-sleep, 100
-Send, ^a
+Send, ^+`t
 sleep, 10
+Send, ^+`t
+sleep, 10
+Send, ^+`t
+sleep, 100
 Send, ^c
 sleep, 10
 clipboard := clipboard * 0.25
