@@ -1,6 +1,7 @@
 #SingleInstance Force
 Old = True
 CurrentJob := ""
+VPD = ***VPD***
 XButton1::
 Send {Enter}
 Return
@@ -9,6 +10,9 @@ InputBox, CurrentJob, Job, Please enter the current job number,,230,125,
 Return
 ^+s::
 Send, %CurrentJob%
+Return
+^+e::
+Send, %VPD%
 Return
 ^+d::
 Send, ^+`t
