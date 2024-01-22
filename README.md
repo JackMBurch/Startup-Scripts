@@ -12,3 +12,4 @@ Startup AHK scripts for my daily workflow
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> | Paste active job number |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> | Copy CircuitHub part number without prefix |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>d</kbd> | Autofill length & width tolerences |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> | Paste "\*\*\*VPD\*\*\*" |
