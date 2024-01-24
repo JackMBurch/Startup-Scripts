@@ -2,8 +2,37 @@
 Old = True
 CurrentJob := ""
 VPD = ***VPD***
+Summing = false
+SumVal1 = -999
 XButton1::
 Send {Enter}
+Return
+XButton2::
+if (Summing = true)
+{
+	Return
+}
+Summing = true
+PrevClip = %clipboard%
+Sendinput, ^{c}
+sleep, 10
+if (PrevClip = clipboard)
+{
+	MsgBox ,,Prompt,Nothing selected!,1.5
+	Return
+}
+if (SumVal1 = -999)
+{
+	SumVal1 := clipboard
+	Summing = false
+	MsgBox ,,Prompt,Select second value,1
+	Return
+}
+SumValSum := (SumVal1 + clipboard) / 2
+clipboard := SumValSum
+MsgBox ,,Prompt,Sum: %SumValSum%,1
+Summing = false
+SumVal1 = -999
 Return
 ^+a::
 InputBox, CurrentJob, Job, Please enter the current job number,,230,125,
