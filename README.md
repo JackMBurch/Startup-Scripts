@@ -4,6 +4,8 @@ Startup AHK scripts for my daily workflow
 ## Shortcuts
 | Keyboard shortcut | Description |
 | ----------------- | ------------|
+| <kbd>Mouse Button 4</kbd> | Enter |
+| <kbd>Mouse Button 5</kbd> | Sum |
 | <kbd>Windows</kbd> + <kbd>C</kbd> | Open Calculator |
 | <kbd>Windows</kbd> + <kbd>N</kbd> | Open notepad / switch to notepad |
 | <kbd>Ctrl</kbd> + <kbd>Windows</kbd> + <kbd>i</kbd> | Show electrical test info |
