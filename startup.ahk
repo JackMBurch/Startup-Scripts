@@ -4,10 +4,10 @@ CurrentJob := ""
 VPD = ***VPD***
 Summing = false
 SumVal1 = -999
-XButton1::
+XButton2::
 Send {Enter}
 Return
-XButton2::
+XButton1::
 if (Summing = true)
 {
 	Return
@@ -18,19 +18,19 @@ Sendinput, ^{c}
 sleep, 10
 if (PrevClip = clipboard)
 {
-	MsgBox ,,Prompt,Nothing selected!,1.5
+	MsgBox ,,Prompt,Nothing selected!,1
 	Return
 }
 if (SumVal1 = -999)
 {
 	SumVal1 := clipboard
 	Summing = false
-	MsgBox ,,Prompt,Select second value,1
+	MsgBox ,,Prompt,Select second value,0.5
 	Return
 }
 SumValSum := (SumVal1 + clipboard) / 2
 clipboard := SumValSum
-MsgBox ,,Prompt,Sum: %SumValSum%,1
+MsgBox ,,Prompt,Sum: %SumValSum%,0.5
 Summing = false
 SumVal1 = -999
 Return
