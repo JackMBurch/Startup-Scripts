@@ -43,6 +43,9 @@ Return
 ^+e::
 Send, %VPD%
 Return
+^+r::
+Send, {BS 10}
+Return
 ^+d::
 Send, ^+`t
 sleep, 10
