@@ -15,3 +15,4 @@ Startup AHK scripts for my daily workflow
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> | Copy CircuitHub part number without prefix |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>d</kbd> | Autofill length & width tolerences |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> | Paste "\*\*\*VPD\*\*\*" |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> | Send 10 x Backspace |
