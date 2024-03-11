@@ -4,6 +4,13 @@ CurrentJob := ""
 VPD = ***VPD***
 Summing = false
 SumVal1 = -999
+^g::
+Send {RButton}g
+Send {Tab}
+Send {Down}
+Send {Tab 2}
+Send {Enter}
+Return
 ^!Left::
 Send {RButton}m
 Send {Tab 6}
