@@ -16,5 +16,5 @@ Startup AHK scripts for my daily workflow
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>d</kbd> | Autofill length & width tolerences |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> | Paste "\*\*\*VPD\*\*\*" |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> | Send 10 x Backspace |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Left</kbd> | Rotate Nexim part left (270) |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Right</kbd> | Rotate Nexim part right (90) |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Left</kbd> | Rotate Nexim part left (90) |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Right</kbd> | Rotate Nexim part right (270) |
